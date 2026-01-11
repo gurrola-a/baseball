@@ -71,8 +71,8 @@ const overlay = document.getElementById('fade-overlay');
 
 video.addEventListener('timeupdate', () => {
   const remaining = video.duration - video.currentTime;
-  if (remaining <= 1.5) {
-    overlay.style.opacity = '0.6';
+  if (remaining <= 0.75) {
+    overlay.style.opacity = '0.4';
   } else {
     overlay.style.opacity = '0';
   }
